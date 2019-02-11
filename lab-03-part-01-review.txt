@@ -15,7 +15,7 @@ This lab will review downloading and uncompressing files, and it will get us set
 
 Write the command that you used to do this below:
 ----------
-
+~
 
 
 ==========
@@ -23,16 +23,72 @@ Write the command that you used to do this below:
 
 Write the command that you used to do this - as well as its output - below :
 ----------
-
-
+pwd
+/users/student
 
 ==========
 3. Are there any directories or files in your directory that have the word mtec1002 in it?
 
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
-
-
+ls
+AMALogger20190109.log			Public
+AMALogger20190128.log			QLData
+AMALogger20190130.log			Things
+AMALogger20190204.log			changing
+AMALogger20190206.log			desktop.png
+AMALogger20190209.log			directory
+Adlm					dogs.jpg
+Adobe					google.jpg
+Applications				google.png
+Desktop					google.txt
+Documents				ipe.properties
+Downloads				isus
+JAM-MTEC1003				myfile.txt
+Library					pymel.log
+MPLABXProjects				skull.ai
+MTEC1002				stuff
+Movies					stuffwithoutchangingyourdirectory
+Music					without
+New Unity Project			xgen
+Pictures				your
+ent-v314-009:~ student$ ls -a
+.					AMALogger20190130.log
+..					AMALogger20190204.log
+.CFUserTextEncoding			AMALogger20190206.log
+.DS_Store				AMALogger20190209.log
+.IdentityService			Adlm
+.ServiceHub				Adobe
+.Trash					Applications
+.Xauthority				Desktop
+.adobe					Documents
+.anaconda				Downloads
+.android				JAM-MTEC1003
+.atom					Library
+.bash_history				MPLABXProjects
+.bash_profile				MTEC1002
+.bash_sessions				Movies
+.cache					Music
+.config					New Unity Project
+.continuum				Pictures
+.dotnet					Public
+.eaglerc				QLData
+.eclipse				Things
+.flexlmrc				changing
+.gitconfig				desktop.png
+.gnome2					directory
+.local					dogs.jpg
+.macports				google.jpg
+.matlab					google.png
+.mono					google.txt
+.mplabcomm				ipe.properties
+.mysql_history				isus
+.nuget					myfile.txt
+.oracle_jre_usage			pymel.log
+.rnd					skull.ai
+.ssh					stuff
+.subversion				stuffwithoutchangingyourdirectory
+.thumbnails				without
 
 ==========
 4. If there are directories or files in your home directory that have the word mtec1002 in them, list them below (otherwise skip this step):
