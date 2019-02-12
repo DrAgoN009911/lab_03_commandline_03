@@ -36,6 +36,12 @@ $ touch foo.txt
 $ ls
 Copy and paste the output below.
 ----------
+Applications		Movies			foo.txt
+Creative Cloud Files	Music			google.html
+Desktop			Pictures		mtec1002
+Documents		Public			mtec1002-lab-02.zip
+Downloads		aardvark		pineapple
+Library			foo			stuff
 
 
 
@@ -44,37 +50,50 @@ Copy and paste the output below.
 
 $ touch bar.txt
 ----------
-
-
+ls
+bar.txt
 
 ==========
 8. List the files in this directory using the flag that gives the most details.
 
 Copy and paste the output below.
 ----------
-
+ls -al bar.txt
+-rw-r--r--  1 kyleholston  staff  0 Feb 12 00:09 bar.txt
 
 
 ==========
 9. Create a copy of bar.txt called baz.txt and then list the files again.
 
-
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
-
-
-
+Kyles-MacBook-Air:touch kyleholston$ touch baz.txt
+Kyles-MacBook-Air:touch kyleholston$ cp bar.txt baz.txt
+Kyles-MacBook-Air:touch kyleholston$ ls
+bar.txt	baz.txt
 ==========
 10. Delete the file called bar.txt and then list the files again.
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
-==========
+rm bar.txt
+ls
+baz.txt
+==========  
 11. Move the file called foo.txt to qux.txt and then list the files again.
-
+Kyles-MacBook-Air:touch kyleholston$ touch foo.txt
+Kyles-MacBook-Air:touch kyleholston$ touch qux.txt
+Kyles-MacBook-Air:touch kyleholston$ mv foo.txt qux.txt
+Kyles-MacBook-Air:touch kyleholston$ ls
+baz.txt	qux.txt
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
+Kyles-MacBook-Air:touch kyleholston$ touch foo.txt
+Kyles-MacBook-Air:touch kyleholston$ touch qux.txt
+Kyles-MacBook-Air:touch kyleholston$ mv foo.txt qux.txt
+Kyles-MacBook-Air:touch kyleholston$ ls
+baz.txt	qux.txt
 
 
 
@@ -90,15 +109,16 @@ Write the command that you used to move the file.  Copy and paste the output of 
 
 Write out the command that you used and what happened.
 ----------
-
-
+Kyles-MacBook-Air:touch kyleholston$ rmdir my_files
+rmdir: my_files: No such file or directory
 
 ==========
 14. Try removing the directory called my_files using rm.
 
 Write out the command that you used and what happened.
 ----------
-
+Kyles-MacBook-Air:touch kyleholston$ rm my_files
+rm: my_files: No such file or directory
 
 
 ==========
@@ -108,8 +128,7 @@ Force the removal of the directory and files using the -rf flag
 
 $ rm -rf my_files
 ----------
-
-
+rm -rf  mtec1002-lab-03
 
 ==========
 16. There's a txt file version of a book located in the mtec1002-lab-03 folder.  It is in the following directory if you're in the lab folder:
@@ -120,8 +139,8 @@ Use the command called cat on the file to show its contents.
 
 Describe what happened below.
 ----------
-
-
+Kyles-MacBook-Air:mtec1002-lab-03 kyleholston$ cat books/other/pg1232.txt
+cat: books/other/pg1232.txt: No such file or directory
 
 ==========
 17. That was a lot of text.  Let's find ways to limit it.  Using the same file...
@@ -132,6 +151,8 @@ Use the command, head, on the file to show the contents of the beginning of the 
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
+head books/other/pg1232.txt
+ head: books/other/pg1232.txt: No such file or directory
 
 
 
@@ -144,6 +165,8 @@ Use tail on the file to show the contents of the end of the file.
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
+tail books/other/pg1232.txt
+tail: books/other/pg1232.txt: No such file or directory
 
 
 
@@ -156,6 +179,8 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
+less books/other/pg1232.txt
+more books/other/pg1232.txt
 
 
 
@@ -164,15 +189,21 @@ Write the command that you used below.  Describe what spacebar and q does after 
 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
-
+You would view less of a file for when there's a certain part needed to be viewed only.
+You would view more of a ifle for when there's a lot to be seen to be viewed.
+You would view all of the contents of a file when you use cat.
+You would view a tail of a file when you want to view the bottom of a file.
+You would view a head of a file when you want to view the top of a file.
 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
-
-
+wc pg1232.txt
+I used the word count command
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
+wc -l pg1232.txt
+I used the word count with the flag l for determining the line count of pg1232.txt.
