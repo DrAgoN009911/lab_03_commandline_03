@@ -17,7 +17,8 @@ We're going to be writing a shell script.  First, though... let's figure out wha
 
 What command did you use, and what was its output?
 ----------
-
+date
+Tue Feb 12 11:42:05 EST 2019
 
 
 ==========
@@ -25,7 +26,14 @@ What command did you use, and what was its output?
 
 What command did you use, and what was its output?
 ----------
-
+cal
+ February 2019
+Su Mo Tu We Th Fr Sa
+                1  2
+ 3  4  5  6  7  8  9
+10 11 12 13 14 15 16
+17 18 19 20 21 22 23
+24 25 26 27 28
 
 
 ==========
@@ -33,7 +41,8 @@ What command did you use, and what was its output?
 
 What commands did you use to do this?
 ----------
-
+~
+-bash: /Users/kyleholston: is a directory
 
 
 ==========
@@ -41,15 +50,16 @@ What commands did you use to do this?
 
 What commands did you use to do this?
 ----------
-
-
+I used the touch command
+touch copy_to_backup.sh
 
 ==========
 5. What are the permissions on your copy_to_backup.sh.
 
 What command did you use to find the permissions?
 ----------
-
+I used the ls -l command to get permission to copy_to_backup.sh
+-rw-r--r--  1 kyleholston  staff  0 Feb 12 11:55 copy_to_backup.sh
 
 
 ==========
@@ -57,8 +67,10 @@ What command did you use to find the permissions?
 
 What commands did you use to do this?  What was the output?
 ----------
-
-
+I used the change permissions to be executable command.
+chmod u+x copy_to_backup.sh
+ls -l copy_to_backup.sh
+-rwxr--r--  1 kyleholston  staff  0 Feb 12 11:55 copy_to_backup.sh
 
 ==========
 7. Try executing the file!
@@ -67,6 +79,8 @@ $ ./copy_to_backup.sh
 
 What command did you use to try to execute the file?  What happens?
 ----------
+I tired using ./ command but nothing happened.
+./copy_to_backup.sh
 
 
 
@@ -75,8 +89,8 @@ What command did you use to try to execute the file?  What happens?
 
 What command did you use to do this?
 ----------
-
-
+I used the nano command
+nano ./copy_to_backup.sh
 
 ==========
 9. In your file, write the following commands:
