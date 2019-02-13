@@ -101,38 +101,48 @@ c. print out "I'm done backing up"
 
 Write out the code in your file below...
 ----------
-
-
+mkdir backup 
+cd backup
+touch backup.txt
+touch copy_to_backup.txt
+cp copy_to_backup.txt backup.txt
+"I'm done backing up"
 
 ==========
 10. Create a directory in your home called test
 ----------
+mkdir test
+
 ==========
 11. Go into that directory and create two empty files... 1.txt and 2.txt
 
 What commands did you use to do this?
 ----------
-
-
-
+cd test
+touch 1.txt
+touch 2.txt
 ==========
 12. Move the script that you created into this directory.
 
 What commands did you use to do this?
 ----------
-
-
-
+mv copy_to_backup.sh dir test
 ==========
 13. Run your script.
 
 What commands did you use to do this?
 ----------
-
-
+I used the mv command
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
 
 ==========
 14. Verify that a backup folder was created in your home directory... with copies of the files present.
 
 What commands did you use to do this?  Show the output.
 ----------
+Kyles-MacBook-Air:backup kyleholston$ ls -lbackup
+total 0
+drwxr-xr-x   3 kyleholston  staff   102 Feb 12 19:18 ./
+drwxr-xr-x+ 34 kyleholston  staff  1156 Feb 12 19:08 ../
+drwxr-xr-x   4 kyleholston  staff   136 Feb 12 18:56 test/
