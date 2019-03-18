@@ -15,7 +15,7 @@ This lab will review downloading and uncompressing files, and it will get us set
 
 Write the command that you used to do this below:
 ----------
-cd
+cd ~
 
 
 ==========
@@ -23,9 +23,7 @@ cd
 
 Write the command that you used to do this - as well as its output - below :
 ----------
-cd
-Kyles-Air:~ kyleholston$ cd
-Kyles-Air:~ kyleholston$ 
+pwd
 
 
 ==========
@@ -78,13 +76,7 @@ ent-v314-009:mtec1002 student$ curl -o mtec1002-lab-03.tar.gz http://foureyes.gi
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
-Kyles-Air:~ kyleholston$ tar  mtec1002-lab-03.tar.gz http://foureyes.github.io/mtec1002-spring2014/labs/03/mtec1002-lab-03.tar.gz
-Kyles-Air:mtec1002-lab-03.tar.gz. kyleholston$  tar mtec1002-lab-03.tar.gz http://foureyes.github.io/mtec1002-spring2014/labs/03/mtec1002-lab-03.tar.gz
-Usage:
-  List:    tar -tf <archive-filename>
-  Extract: tar -xf <archive-filename>
-  Create:  tar -cf <archive-filename> [filenames...]
-  Help:    tar --help
+tar xzf mtec1002-lab-03.tar.gz
 
 ==========
 8.  You should now have a directory called mtec1002-lab-03 in your home directory.  Verify that this directory exists.
