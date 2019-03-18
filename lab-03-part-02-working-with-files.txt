@@ -119,9 +119,8 @@ rm: my_files: No such file or directory
 Force the removal of the directory and files using the -rf flag
 
 $ rm -rf my_files
-----------
-rm -rf  mtec1002-lab-03
-
+---------- 
+rm -rf  mtec1002-lab03
 ==========
 16. There's a txt file version of a book located in the mtec1002-lab-03 folder.  It is in the following directory if you're in the lab folder:
 
